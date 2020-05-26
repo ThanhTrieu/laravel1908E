@@ -21,3 +21,19 @@ Route::get('/', function () {
 Route::get('/hello-word', function () {
    return "Hello word";
 });
+
+Route::post('/api/demo-post', function () {
+   return "This is method post";
+});
+
+Route::post('/tao-user', function () {
+    return "This is method post - tao user";
+});
+
+Route::match(['get', 'post'], '/get-or-post', function () {
+    return "get-or-post";
+});
+
+Route::any('/access-any', function () {
+    return "access-any";
+});
