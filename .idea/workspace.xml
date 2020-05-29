@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f168536-6026-41e6-b9d8-426b7d0d4af3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/login/login_view.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/test-view.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +14,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -118,7 +121,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1cRbe2CnUXmjgoZfVYoIXKrPqXJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -160,7 +165,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590494444383</updated>
-      <workItem from="1590494445852" duration="6687000" />
+      <workItem from="1590494445852" duration="8946000" />
+      <workItem from="1590740015836" duration="12499000" />
     </task>
     <servers />
   </component>
@@ -168,10 +174,11 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="352" y="124" key="SettingsEditor" timestamp="1590512920246">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="352" y="122" key="SettingsEditor" timestamp="1590766331033">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
+    <state x="352" y="122" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1590766331033" />
     <state x="352" y="124" key="SettingsEditor/0.23.1440.823@0.23.1440.823" timestamp="1590512920246" />
-    <state x="469" y="158" key="SettingsEditor/0.23.1920.993@0.23.1920.993" timestamp="1590494461930" />
+    <state x="469" y="158" key="SettingsEditor/0.23.1920.993@0.23.1920.993" timestamp="1590751711774" />
   </component>
 </project>
