@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use voku\helper\AntiXSS;
 
 class TestController extends Controller
 {
@@ -46,5 +47,26 @@ class TestController extends Controller
         // Responses ve 1 view
         // nap vao 1 view - load vao 1 view
         return view('login/login_view');
+    }
+
+    public function handleLogin(Request $request, AntiXSS $xss)
+    {
+        // dd($request->all());
+        // hien thi thong tin va dung chuong trinh
+        // gan giong nhu su ket hop cua var_dump + die php thuan
+        $user = $request->user;
+        //$user = strip_tags($user);
+        $user = $xss->xss_clean($user);
+
+        $pass = $request->pass;
+        $pass = $xss->xss_clean($pass);
+
+        if($pass === '123' && $user === 'admin'){
+            // login thanh cong
+            return redirect(route('test.admin.home'));
+        } else {
+            // quay lai form giao dien
+            return redirect(route('test.login',['state' => 'fail']));
+        }
     }
 }

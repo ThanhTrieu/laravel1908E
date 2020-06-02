@@ -122,3 +122,14 @@ Route::get('test-controller', 'TestController@index')->name('test.index');
 Route::get('test-demo', 'TestController@demo')->name('test.demo');
 Route::get('test-abc/{name}/{id}', 'TestController@abc')->name('test.abc');
 Route::get('/login', 'TestController@showFormLogin')->name('test.login');
+Route::post('/handle-login', 'TestController@handleLogin')->name('test.handle.login');
+
+/****** Test Admin group **********/
+Route::group([
+    'prefix' => '/test/admin',
+    'as' => 'test.',
+    'namespace' => 'Test'
+], function (){
+    Route::get('/dashboard','DashboardController@index')->name('admin.home');
+    Route::get('/contact', 'ContactController@index')->name('admin.contact');
+});
