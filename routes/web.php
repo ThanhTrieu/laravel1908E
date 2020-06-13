@@ -133,3 +133,11 @@ Route::group([
     Route::get('/dashboard','DashboardController@index')->name('admin.home');
     Route::get('/contact', 'ContactController@index')->name('admin.contact');
 });
+
+/***** Test query builder *****/
+Route::group([
+    'prefix' => 'query/builder',
+    'namespace' => 'query'
+], function (){
+    Route::get('test', 'QueryBuilderController@index')->name('test.query');
+});
