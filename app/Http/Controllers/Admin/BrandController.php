@@ -18,12 +18,14 @@ class BrandController extends Controller
         $data = [];
         $keyword = $request->q;
         $keyword = $xss->xss_clean($keyword);
-        $keyword = "%{$keyword}%";
+        $key = "%{$keyword}%";
 
         $data['message'] = $request->session()->get('brands');
         $data['listBrands'] = DB::table('brands')
+                                ->where('name', 'like', $key)
                                 ->orderByDesc('status')
                                 ->paginate(self::LIMITED_ROW);
+        $data['keyword'] = $keyword;
         return view('admin.brand.index', $data);
     }
 

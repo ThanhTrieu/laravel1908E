@@ -38,4 +38,16 @@ $(function () {
             window.location.href = urlSearch + "?q=" + keyword;
         }
     });
+
+    // danh rieng cho viec bam enter
+    $('.js-keyword-brand').on('keyup',function (event) {
+        var self = $(this);
+        if(event.keyCode == 13){
+            // su kien bam nut enter
+            var key = self.val().trim();
+            if(key.length >= 3){
+                window.location.href = urlSearch + "?q=" + key;
+            }
+        }
+    });
 });

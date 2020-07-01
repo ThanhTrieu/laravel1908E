@@ -6,7 +6,9 @@
         <h1 class="h3 mb-0 text-gray-800">List shoes brands</h1>
         <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-                <input type="text" class="form-control bg-light border-1 small js-keyword-brand" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+
+                <input type="text" class="form-control bg-light border-1 small js-keyword-brand" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" value="{{ $keyword }}">
+
                 <div class="input-group-append">
                     <button class="btn btn-primary js-search-brand" type="button">
                         <i class="fas fa-search fa-sm"></i>
@@ -63,7 +65,7 @@
 
             <div class="text-center">
                 {{-- Hien thi phan trang --}}
-                {{ $listBrands->links() }}
+                {{ $listBrands->appends(request()->query())->links() }}
             </div>
         </div>
     </div>
