@@ -95,9 +95,6 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
-                <div class="links">
-                    <a href="{{route('profile.detail',['id'=> 1])}}">Detail Profile</a>
-                </div>
             </div>
         </div>
     </body>
