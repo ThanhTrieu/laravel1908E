@@ -2,10 +2,14 @@
 
 @push('stylesheets')
     <link href="{{asset('admin/css/treeview.css')}}" rel="stylesheet">
+{{--    <link rel="stylesheet" href="{{asset('admin/css/dropzone.css')}}">--}}
+    <style type="text/css">
+        .hover-pointer{
+            cursor: pointer;
+        }
+    </style>
 @endpush
-@push('javascripts')
-    <script src="{{asset('admin/js/treeview.js')}}"></script>
-@endpush
+
 
 @section('content')
     <div class="row">
@@ -47,15 +51,20 @@
             {{-- Hien thi danh sach category --}}
             <ul id="tree1">
                 @foreach($viewCate as $key => $item)
-                    <li>
-
-                        {{$item->name}}
-                        <a href="#"><i class="fa fa-pencil-square-o"> edit </i></a>
-                        @if(count($item->childs))
-                            {{-- De Quy --}}
-                            @include('admin.category.child-category',['childs' => $item->childs])
-                        @endif
-                    </li>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
+                            <li class="hover-pointer">
+                                {{$item->name}}
+                                @if(count($item->childs))
+                                    {{-- De Quy --}}
+                                    @include('admin.category.child-category',['childs' => $item->childs])
+                                @endif
+                            </li>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
+                            <a class="float-right mt-0" href="{{route('admin.edit.category',['slug'=> $item->slug, 'id' => $item->id])}}"><i class="fas fa-edit"></i></a>
+                        </div>
+                    </div>
                 @endforeach
             </ul>
             <hr>
@@ -64,4 +73,50 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <form method="post" action="" enctype="multipart/form-data" class="dropzone" id="dropzone">
+                @csrf
+{{--                <input type="text" placeholder="sasas">--}}
+            </form>
+        </div>
+    </div>
 @endsection
+
+@push('javascripts')
+    <script src="{{asset('admin/js/treeview.js')}}"></script>
+{{--    <script src="{{asset('admin/js/dropzone.js')}}"></script>--}}
+    <script type="text/javascript">
+        // Dropzone.autoDiscover = false;
+        // $(document).ready(function () {
+        //     $("#dropzone").dropzone({
+        //         maxFiles: 2000,
+        //         // url: "/ajax_file_upload_handler/",
+        //         acceptedFiles: ".jpeg,.jpg,.png,.gif",
+        //         timeout: 5000,
+        //         success: function (file, response) {
+        //             console.log(response);
+        //         }
+        //     });
+        // })
+        // Dropzone.options.dropzone = {
+        //     maxFilesize: 12,
+        //     renameFile: function(file) {
+        //         var dt = new Date();
+        //         var time = dt.getTime();
+        //         return time+file.name;
+        //     },
+        //     acceptedFiles: ".jpeg,.jpg,.png,.gif",
+        //     addRemoveLinks: true,
+        //     timeout: 5000,
+        //     success: function(file, response)
+        //     {
+        //         console.log(response);
+        //     },
+        //     error: function(file, response)
+        //     {
+        //         return false;
+        //     }
+        // };
+    </script>
+@endpush

@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f168536-6026-41e6-b9d8-426b7d0d4af3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdateCategoryPost.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/css/dropzone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/dropzone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/vendor/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/edit-category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin-layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/child-category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/child-category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +213,9 @@
       <workItem from="1593143597666" duration="4334000" />
       <workItem from="1593170964417" duration="10297000" />
       <workItem from="1593418571856" duration="282000" />
-      <workItem from="1593506642159" duration="14728000" />
+      <workItem from="1593506642159" duration="15359000" />
+      <workItem from="1593768875354" duration="17000" />
+      <workItem from="1593768916269" duration="13864000" />
     </task>
     <servers />
   </component>
@@ -226,21 +238,21 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="481" y="349" key="ComposerInitDialogKey/0.23.1440.821@0.23.1440.821" timestamp="1591953842411" />
-    <state x="617" y="505" key="NewPhpFileDialog" timestamp="1593525064706">
+    <state x="617" y="505" key="NewPhpFileDialog" timestamp="1593778227729">
       <screen x="0" y="23" width="1920" height="993" />
     </state>
     <state x="463" y="422" key="NewPhpFileDialog/0.23.1440.822@0.23.1440.822" timestamp="1593144427199" />
-    <state x="617" y="505" key="NewPhpFileDialog/0.23.1920.993@0.23.1920.993" timestamp="1593525064706" />
-    <state x="352" y="123" key="SettingsEditor" timestamp="1593567247035">
+    <state x="617" y="505" key="NewPhpFileDialog/0.23.1920.993@0.23.1920.993" timestamp="1593778227729" />
+    <state x="352" y="123" key="SettingsEditor" timestamp="1593825959232">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="352" y="114" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1592561779593" />
     <state x="352" y="116" key="SettingsEditor/0.23.1440.815@0.23.1440.815" timestamp="1591183554629" />
     <state x="352" y="117" key="SettingsEditor/0.23.1440.816@0.23.1440.816" timestamp="1592586027955" />
     <state x="352" y="122" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1592911888093" />
-    <state x="352" y="123" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1593567247035" />
+    <state x="352" y="123" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1593825959232" />
     <state x="352" y="124" key="SettingsEditor/0.23.1440.823@0.23.1440.823" timestamp="1590512920246" />
-    <state x="469" y="158" key="SettingsEditor/0.23.1920.993@0.23.1920.993" timestamp="1593170993524" />
+    <state x="469" y="158" key="SettingsEditor/0.23.1920.993@0.23.1920.993" timestamp="1593775708216" />
     <state x="625" y="242" width="670" height="676" key="search.everywhere.popup" timestamp="1593172319986">
       <screen x="0" y="23" width="1920" height="993" />
     </state>
