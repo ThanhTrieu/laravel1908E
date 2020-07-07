@@ -2,7 +2,6 @@
 
 @push('stylesheets')
     <link href="{{asset('admin/css/treeview.css')}}" rel="stylesheet">
-{{--    <link rel="stylesheet" href="{{asset('admin/css/dropzone.css')}}">--}}
     <style type="text/css">
         .hover-pointer{
             cursor: pointer;
@@ -75,9 +74,16 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <form method="post" action="" enctype="multipart/form-data" class="dropzone" id="dropzone">
+            <form method="post" action="{{route('admin.upload')}}" enctype="multipart/form-data">
                 @csrf
-{{--                <input type="text" placeholder="sasas">--}}
+                <div class="form-group">
+                    <label for="imageProduct">image product</label>
+                    <div id="imageProduct" class="input-images"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" />
+                </div>
+                <button class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>
@@ -85,38 +91,4 @@
 
 @push('javascripts')
     <script src="{{asset('admin/js/treeview.js')}}"></script>
-{{--    <script src="{{asset('admin/js/dropzone.js')}}"></script>--}}
-    <script type="text/javascript">
-        // Dropzone.autoDiscover = false;
-        // $(document).ready(function () {
-        //     $("#dropzone").dropzone({
-        //         maxFiles: 2000,
-        //         // url: "/ajax_file_upload_handler/",
-        //         acceptedFiles: ".jpeg,.jpg,.png,.gif",
-        //         timeout: 5000,
-        //         success: function (file, response) {
-        //             console.log(response);
-        //         }
-        //     });
-        // })
-        // Dropzone.options.dropzone = {
-        //     maxFilesize: 12,
-        //     renameFile: function(file) {
-        //         var dt = new Date();
-        //         var time = dt.getTime();
-        //         return time+file.name;
-        //     },
-        //     acceptedFiles: ".jpeg,.jpg,.png,.gif",
-        //     addRemoveLinks: true,
-        //     timeout: 5000,
-        //     success: function(file, response)
-        //     {
-        //         console.log(response);
-        //     },
-        //     error: function(file, response)
-        //     {
-        //         return false;
-        //     }
-        // };
-    </script>
 @endpush

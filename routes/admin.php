@@ -32,4 +32,5 @@ Route::group([
     Route::post('/add-category','CategoryController@addCategory')->name('add.category');
     Route::get('/category/{slug}~{id}','CategoryController@editCategory')->name('edit.category');
     Route::post('/update-category/{id}', 'CategoryController@handleUpdateCategory')->name('handle.update.category');
+    Route::post('/image-upload', 'CategoryController@upload')->name('upload');
 });
