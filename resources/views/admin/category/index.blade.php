@@ -72,21 +72,6 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <form method="post" action="{{route('admin.upload')}}" enctype="multipart/form-data">
-                @csrf
-                <div class="form-group">
-                    <label for="imageProduct">image product</label>
-                    <div id="imageProduct" class="input-images"></div>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" />
-                </div>
-                <button class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
 @endsection
 
 @push('javascripts')
