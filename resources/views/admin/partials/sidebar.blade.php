@@ -34,6 +34,7 @@
                 <h6 class="collapse-header">Quản lý :</h6>
                 <a class="collapse-item" href="{{route('admin.brands')}}">Thương hiệu</a>
                 <a class="collapse-item" href="{{route('admin.category')}}">Danh mục sản phẩm</a>
+                <a class="collapse-item" href="{{route('admin.shoes.product')}}">Sản phẩm giầy dép </a>
             </div>
         </div>
     </li>

@@ -2,9 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f168536-6026-41e6-b9d8-426b7d0d4af3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/StoreProducShoesPost.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/css/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/dsb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/hsb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/hy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/ne.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/pa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/ps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/sr-Cyrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/tk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/i18n/zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/jquery.masknumber.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/product-shoes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admin/js/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/images/air-zoom-pegasus-37-betrue-shoe-0pTG3Q.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/images/air-zoom-pegasus-37-running-shoe-mwrTCc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/images/blazer-low-shoe-FRdCCk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/images/blazer-mid-77-vintage-shoe-dNWPTj.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/product/add-shoes.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/product/list-shoes.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin-layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +225,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -211,7 +286,8 @@
       <workItem from="1593918373069" duration="644000" />
       <workItem from="1594089794533" duration="752000" />
       <workItem from="1594090964080" duration="1475000" />
-      <workItem from="1594348786953" duration="207000" />
+      <workItem from="1594348786953" duration="588000" />
+      <workItem from="1594371738138" duration="11524000" />
     </task>
     <servers />
   </component>
@@ -234,13 +310,13 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="481" y="349" key="ComposerInitDialogKey/0.23.1440.821@0.23.1440.821" timestamp="1591953842411" />
-    <state x="617" y="505" key="NewPhpFileDialog" timestamp="1593778227729">
+    <state x="617" y="505" key="NewPhpFileDialog" timestamp="1594381857434">
       <screen x="0" y="23" width="1920" height="993" />
     </state>
     <state x="463" y="422" key="NewPhpFileDialog/0.23.1440.822@0.23.1440.822" timestamp="1593144427199" />
-    <state x="617" y="505" key="NewPhpFileDialog/0.23.1920.993@0.23.1920.993" timestamp="1593778227729" />
-    <state x="352" y="123" key="SettingsEditor" timestamp="1593825959232">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state x="617" y="505" key="NewPhpFileDialog/0.23.1920.993@0.23.1920.993" timestamp="1594381857434" />
+    <state x="469" y="158" key="SettingsEditor" timestamp="1594380960114">
+      <screen x="0" y="23" width="1920" height="993" />
     </state>
     <state x="352" y="114" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1592561779593" />
     <state x="352" y="116" key="SettingsEditor/0.23.1440.815@0.23.1440.815" timestamp="1591183554629" />
@@ -248,10 +324,26 @@
     <state x="352" y="122" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1592911888093" />
     <state x="352" y="123" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1593825959232" />
     <state x="352" y="124" key="SettingsEditor/0.23.1440.823@0.23.1440.823" timestamp="1590512920246" />
-    <state x="469" y="158" key="SettingsEditor/0.23.1920.993@0.23.1920.993" timestamp="1593775708216" />
+    <state x="469" y="158" key="SettingsEditor/0.23.1920.993@0.23.1920.993" timestamp="1594380960114" />
     <state x="625" y="242" width="670" height="676" key="search.everywhere.popup" timestamp="1593172319986">
       <screen x="0" y="23" width="1920" height="993" />
     </state>
     <state x="625" y="242" width="670" height="676" key="search.everywhere.popup/0.23.1920.993@0.23.1920.993" timestamp="1593172319986" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/routes/admin.php</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/admin/product/add-shoes.blade.php</url>
+          <line>56</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

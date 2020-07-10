@@ -32,4 +32,9 @@ Route::group([
     Route::post('/add-category','CategoryController@addCategory')->name('add.category');
     Route::get('/category/{slug}~{id}','CategoryController@editCategory')->name('edit.category');
     Route::post('/update-category/{id}', 'CategoryController@handleUpdateCategory')->name('handle.update.category');
+
+    /*Product*/
+    Route::get('/shoes-product','ProductController@index')->name('shoes.product');
+    Route::get('/add-shoes-product', 'ProductController@addShoes')->name('add.shoes');
+    Route::post('add-shoes', 'ProductController@handleAddShoes')->name('handle.add.shoes');
 });
